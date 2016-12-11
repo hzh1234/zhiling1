@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>	
+	.box {
+		width: 100px;
+		height: 100px;
+		margin:20px;
+		background-color: #f00;
+	
+		animation: mymove 3s 1s forwards，scale 5s 4s forwards；
+		-webkit-animation:mymove 3s 1s forwards，scale 5s 4s  forwards；
+			}
+	.box2 {
+		animation: mymove 3s 1s alternate;
+		-webkit-animation: mymove2 3s 1s alternate;
+	}
+@keyframes myblack{
+		form{
+			margin-left: 0;
+			-webkit-transform: scale(1,1);
+				-ms-transform: scale(1,1);
+				-o-transform: scale(1,1);
+				transform: scale(1,1);	
+		}
+		to {
+			margin-left: 200px;
+			-webkit-transform: scale(2,2);
+			-ms-transform: scale(2,2);
+			-o-transform: scale(2,2);
+			transform: scale(2,2);
+		}
+	}
+
+@-webkit-keyframes myblack{
+		from{
+			margin-left: 0;
+			-webkit-transform: scale(1,1);
+			-ms-transform: scale(1,1);
+			-o-transform: scale(1,1);
+			transform: scale(1,1);
+		}
+		to {
+			margin-left: 200px;
+			-webkit-transform: scale(2,2);
+			-ms-transform: scale(2,2);
+			-o-transform: scale(2,2);
+			transform: scale(2,2);
+		}
+	}
+	@keyframes myscale{
+		from{-webkit-transform-origin: left top;
+		-moz-transform-origin: left top;
+		-ms-transform-origin: left top;
+		-o-transform-origin: left top;
+		transform-origin: left top;
+		-webkit-transform: scale(1,1);
+		-ms-transform: scale(1,1);
+		-o-transform: scale(1,1);
+		transform: scale(1,1);
+	}
+		to{
+			-webkit-transform:scale (1,2) ;
+			-ms-transform:scale (1,2) ;
+			-o-transform:scale (1,2) ;
+			transform:scale (1,2) ;
+		}
+
+	}
+@-webkit-keyframes myscale{
+		from{  }
+		to{}
+}
+	</style>
+
+</head>
+<body>
+	<div class="box"></div>	
+</body>
+</html>
